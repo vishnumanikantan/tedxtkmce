@@ -25,10 +25,16 @@
 /* small mobile :320px. */
 /* Large Mobile :480px. */
 /* line 6, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
+
+.modal-dark .modal-backdrop {
+  background-color: #131313;
+}
+
 body {
   font-family: "Muli", sans-serif;
   font-weight: normal;
   font-style: normal;
+  background-image: url("../img/black_bg3.jpg");
 }
 
 /* line 25, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
@@ -193,7 +199,8 @@ h3 {
 
 /* line 136, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 .black_bg {
-  background: #000000;
+ 
+
 }
 
 /* line 139, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */

@@ -30,9 +30,6 @@
 </head>
 
 <body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
 
     <!-- header-start -->
     <header>
@@ -64,10 +61,11 @@
                                     </nav>
                                 </div>
                             </div>
+
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="buy_tkt">
                                     <div class="book_btn d-none d-lg-block">
-                                        <a href="#">Buy Tickets</a>
+                                        <a data-toggle="modal" data-target="#formModal">Buy Tickets</a>
                                     </div>
                                 </div>
                             </div>
@@ -81,6 +79,7 @@
             </div>
         </div>
     </header>
+
     <!-- header-end -->
 
     <!-- slider_area_start -->
@@ -111,7 +110,7 @@
                             <span class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">10.00 AM IST</span>
                             <div class="row mt-4 justify-content-center">
                                 <div class="col-xl-4 col-lg-4">
-                                    <a id="get_tkt" href="#">Get Tickets Now</a>
+                                    <a id="get_tkt" data-toggle="modal" data-target="#formModal">Get Tickets Now</a>
                                 </div>
                             </div>
                         </div>
@@ -328,9 +327,9 @@
 
 
 
-    
 
-   
+
+
     <footer class="footer">
         <div class="footer_top">
             <div class="container">
@@ -398,6 +397,105 @@
 
 
     <script src="js/main.js"></script>
+
+    <div class="modal fade modal-dark" id="formModal" tabindex="-1" data-backdrop="false" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Registration</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="regForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="college">College</label>
+                            <input type="text" class="form-control" id="college" placeholder="college" name="college">
+                        </div>
+                        <div class="form-group">
+                            <label for="whatsapp">Number</label>
+                            <input type="text" class="form-control" id="whatsapp" placeholder="Phone number"
+                                name="whatsapp">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="email address"
+                                name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="address" name="address">
+                            <small id="addressHelp" class="form-text text-muted">We will be sending you a personalised
+                                goodies bag so provide a shippable address</small>
+                        </div>
+                        <button id="register" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="successModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+        $('#regForm').submit(function (e) {
+            e.preventDefault();
+
+            var apiUrl = 'https://cors-anywhere.herokuapp.com/https://tedxtkmce.herokuapp.com/tickets';
+            fetch(apiUrl,
+                {
+                    method: "POST",
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body:JSON.stringify( {
+                        name: $('#name').val(),
+                        email: $('#email').val(),
+                        whatsapp: $('#whatsapp').val(),
+                        address: $('#address').val(),
+                        college: $('#college').val()
+                    })
+
+                }).then(response => {
+                    return response.json();
+                }).then(data => {
+                    console.log(data);
+                    if (data.success == true) {
+                        $('#formModal').hide();
+                        
+                    }
+                }).catch(err => {
+                    console.log(err);
+                });
+        })
+
+    </script>
+
 </body>
 
 </html>
