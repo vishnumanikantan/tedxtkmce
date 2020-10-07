@@ -404,7 +404,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLongTitle">Registration</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button id="close" type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -438,19 +438,20 @@
                     </form>
 
                     <div id="regSuccess">
-                        <p>Your Registration was successfull</p>
+                        <p>Please Wait</p>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
-    
+
     <script type="text/javascript">
         $('#regSuccess').hide();
         $('#regForm').submit(function (e) {
             e.preventDefault();
-
+            $('#regForm').hide();
+            $('#regSuccess').show();
             var apiUrl = 'https://cors-anywhere.herokuapp.com/https://tedxtkmce.herokuapp.com/tickets';
             fetch(apiUrl,
                 {
@@ -459,7 +460,7 @@
                         'Accept': 'application/json',
                         'Content-Type': 'application/json'
                     },
-                    body:JSON.stringify( {
+                    body: JSON.stringify({
                         name: $('#name').val(),
                         email: $('#email').val(),
                         whatsapp: $('#whatsapp').val(),
@@ -471,14 +472,22 @@
                     return response.json();
                 }).then(data => {
                     console.log(data);
+                    var element = document.getElementById("regSuccess");
                     if (data.success == true) {
-                        $('#regForm').hide();
-                        $('#regSuccess').show();
-                        
+                        element.innerHTML = "<p>Your Registration was successfull</p>";
+
+                    }
+                    else{
+                        element.innerHTML = "<p>Your Registration was not successfull... please try again</p>";
                     }
                 }).catch(err => {
                     console.log(err);
                 });
+        })
+
+        $("#close").click(function(){
+            $('#regForm').show();
+            $('#regSuccess').hide();
         })
 
     </script>
