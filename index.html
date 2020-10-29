@@ -51,12 +51,12 @@
                                     <nav>
                                         <ul id="navigation">
                                             <li><a href="index.html">home</a></li>
-                                            <li><a href="performer.html">About</a></li>
-                                            <li><a href="speakers.html">Speakers</a></li>
-                                            <li><a href="sponsors.html">Sponsers</a></li>
-                                            <li><a href="team.html">Team</a></li>
+                                            <li><a href="#about">About</a></li>
+                                            <li><a href="#speakers">Speakers</a></li>
+                                            <li><a href="#sponsors">Sponsers</a></li>
+                                            <li><a href="#team">Team</a></li>
                                             <!-- <li><a href="#">Preview</a></li> -->
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="#contact">Contact</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -65,7 +65,7 @@
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="buy_tkt">
                                     <div class="book_btn d-none d-lg-block">
-                                        <a data-toggle="modal" data-target="#formModal">Buy Tickets</a>
+                                        <a href="./register.html">Buy Tickets</a>
                                     </div>
                                 </div>
                             </div>
@@ -103,16 +103,20 @@
                                 style="font-family: tedFont;">Prosper.Sapience<span id="x"></span>
                             </h3>
                             <span class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s"
-                                style="font-family: tedFont;">November 22nd,2020</span>
+                                style="font-family: tedFont;">November 22nd, 2020</span>
+                            <span class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s"
+                                style="font-family: tedFont;"> - 10.00 AM IST</span>
                             <a href="#" class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
                                 <p style="font-family: tedFont;">TKM College of Engineering, Kollam</p>
                             </a>
-                            <span class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s"
-                                style="font-family: tedFont;">10.00 AM IST</span>
+                            <a href="#" class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+                                <h3 id="counter" style="font-family: tedFont; font-size: xx-large;">00d 00h 00m 00s</h3>
+                            </a>
+
                             <div class="row mt-4 justify-content-center">
                                 <div class="col-xl-4 col-lg-4">
-                                    <a id="get_tkt" data-toggle="modal" data-target="#formModal"
-                                        style="font-family: tedFont;">Get Tickets Now</a>
+                                    <a id="get_tkt" href="./register.html" style="font-family: tedFont;">Get Tickets
+                                        Now</a>
                                 </div>
                             </div>
                         </div>
@@ -125,7 +129,7 @@
     <!-- slider_area_end -->
 
     <!-- about_area_start  -->
-    <div class="about_area black_bg">
+    <div id="about" class="about_area black_bg">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -199,7 +203,7 @@
     <!-- about_area_end  -->
 
     <!-- performar_area_start  -->
-    <div class="performar_area black_bg">
+    <div id="speakers" class="performar_area black_bg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -211,50 +215,61 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="row">
-                        <div class="col-lg-6 col-md-6">
+                        <div class="col-lg-4 col-md-6">
                             <div class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                                 <div data-tilt class="thumb">
-                                    <img src="img/performer/1.png" alt="">
+                                    <a href="./performer1.html">
+                                        <img src="img/performer/1.png" alt="">
+                                    </a>
                                 </div>
                                 <div class="performer_heading">
                                     <h4>Mohanlal</h4>
                                     <span>Actor</span>
+                                    <div>
+                                        <a href="#" style="color: aliceblue;" class="fa fa-facebook"></a>
+                                        <a href="#" style="color: aliceblue;" class="fa fa-instagram"></a>
+                                        <a href="#" style="color: aliceblue;" class="fa fa-youtube"></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6">
+                        <div class="col-lg-4 col-md-6">
                             <div class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
                                 <div data-tilt class="thumb">
-                                    <img src="img/performer/2.png" alt="">
+                                    <a href="./performer2.html">
+                                        <img src="img/performer/2.png" alt="">
+                                    </a>
                                 </div>
                                 <div class="performer_heading">
                                     <h4>Prithviraj</h4>
                                     <span>Actor</span>
+                                    <div>
+                                        <a href="#" style="color: aliceblue;" class="fa fa-facebook"></a>
+                                        <a href="#" style="color: aliceblue;" class="fa fa-instagram"></a>
+                                        <a href="#" style="color: aliceblue;" class="fa fa-youtube"></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6">
+                        <div class="col-lg-4 col-md-6">
                             <div class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                                 <div data-tilt class="thumb">
-                                    <img src="img/performer/3.png" alt="">
+                                    <a href="./performer3.html">
+                                        <img src="img/performer/3.png" alt="">
+                                    </a>
                                 </div>
                                 <div class="performer_heading">
                                     <h4>Virat Kohli</h4>
                                     <span>Cricketer</span>
+                                    <div>
+                                        <a href="#" style="color: aliceblue;" class="fa fa-facebook"></a>
+                                        <a href="#" style="color: aliceblue;" class="fa fa-instagram"></a>
+                                        <a href="#" style="color: aliceblue;" class="fa fa-youtube"></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                                <div data-tilt class="thumb">
-                                    <img src="img/performer/4.png" alt="">
-                                </div>
-                                <div class="performer_heading">
-                                    <h4>Sunli Chettri</h4>
-                                    <span>Footballer</span>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -262,7 +277,7 @@
     </div>
     <!-- performar_area_end  -->
 
-    <div class="brand_area black_bg">
+    <div id="sponsors" class="brand_area black_bg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -303,7 +318,7 @@
         </div>
     </div>
 
-    <div class="brand_area black_bg">
+    <div id="team" class="brand_area black_bg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -476,12 +491,7 @@
         </div>
     </div>
 
-
-
-
-
-
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <div class="footer_top">
             <div class="container">
                 <div class="row justify-content-center">
@@ -490,15 +500,19 @@
                             <div class="address_details text-center">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        
-                                        <a href="https://www.facebook.com/TEDxTKMCE" style="color: aliceblue; margin: 30px;" class="fa fa-facebook fa-2x"></a>
-                                        <a href="https://www.instagram.com/tedxtkmce/" style="color: aliceblue;  margin: 30px;" class="fa fa-instagram fa-2x"></a>
-                                        <a href="https://www.youtube.com/watch?v=IMf3vcCwTlo&list=PLsRNoUx8w3rOPEIf2f00zClk455AIcG46" style="color: aliceblue;  margin: 30px;" class="fa fa-youtube fa-2x"></a>
+
+                                        <a href="https://www.facebook.com/TEDxTKMCE"
+                                            style="color: aliceblue; margin: 30px;" class="fa fa-facebook fa-2x"></a>
+                                        <a href="https://www.instagram.com/tedxtkmce/"
+                                            style="color: aliceblue;  margin: 30px;" class="fa fa-instagram fa-2x"></a>
+                                        <a href="https://www.youtube.com/watch?v=IMf3vcCwTlo&list=PLsRNoUx8w3rOPEIf2f00zClk455AIcG46"
+                                            style="color: aliceblue;  margin: 30px;" class="fa fa-youtube fa-2x"></a>
 
                                     </div>
-                                    
+
                                     <div class="col-lg-6">
-                                        <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">Address</h3>
+                                        <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">Address
+                                        </h3>
                                         <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">The event
                                             regularly
                                             attracts a diverse range of attendees from around Kerala.</p>
@@ -506,7 +520,8 @@
                                     </div>
 
                                     <div class="col-lg-6">
-                                        <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">Connect with us</h3>
+                                        <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">Connect
+                                            with us</h3>
                                         <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">The event
                                             regularly
                                             attracts a diverse range of attendees from around Kerala.</p>
@@ -527,7 +542,7 @@
                         <p class="copy_right text-center wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
                             Copyright &copy; TEDxTKMCE
                             <script>document.write(new Date().getFullYear());</script>
-                            
+
                         </p>
                         <p class="copy_right text-center wow fadeInDown">
                             This independent event is operated under licence from TED. All rights reserved.
@@ -572,99 +587,37 @@
 
     <script src="js/main.js"></script>
 
-    <div class="modal fade modal-dark" id="formModal" tabindex="-1" data-backdrop="false" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Registration</h5>
-                    <button id="close" type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form id="regForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
-                        </div>
-                        <div class="form-group">
-                            <label for="college">College</label>
-                            <input type="text" class="form-control" id="college" placeholder="college" name="college">
-                        </div>
-                        <div class="form-group">
-                            <label for="whatsapp">Number</label>
-                            <input type="text" class="form-control" id="whatsapp" placeholder="Phone number"
-                                name="whatsapp">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="email address"
-                                name="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="address">Address</label>
-                            <input type="text" class="form-control" id="address" placeholder="address" name="address">
-                            <small id="addressHelp" class="form-text text-muted">We will be sending you a personalised
-                                goodies bag so provide a shippable address</small>
-                        </div>
-                        <button id="register" class="btn btn-primary">Submit</button>
-                    </form>
+    <script>
+        var countDownDate = new Date("Nov 20, 2020 10:00:00").getTime();
 
-                    <div id="regSuccess">
-                        <p>Please Wait</p>
-                    </div>
-                </div>
+        // Update the count down every 1 second
+        var x = setInterval(function () {
 
-            </div>
-        </div>
-    </div>
+            // Get today's date and time
+            var now = new Date().getTime();
 
-    <script type="text/javascript">
-        $('#regSuccess').hide();
-        $('#regForm').submit(function (e) {
-            e.preventDefault();
-            $('#regForm').hide();
-            $('#regSuccess').show();
-            var apiUrl = 'https://cors-anywhere.herokuapp.com/https://tedxtkmce.herokuapp.com/tickets';
-            fetch(apiUrl,
-                {
-                    method: "POST",
-                    headers: {
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        name: $('#name').val(),
-                        email: $('#email').val(),
-                        whatsapp: $('#whatsapp').val(),
-                        address: $('#address').val(),
-                        college: $('#college').val()
-                    })
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
 
-                }).then(response => {
-                    return response.json();
-                }).then(data => {
-                    console.log(data);
-                    var element = document.getElementById("regSuccess");
-                    if (data.success == true) {
-                        element.innerHTML = "<p>Your Registration was successfull</p>";
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                    }
-                    else {
-                        element.innerHTML = "<p>Your Registration was not successfull... please try again</p>";
-                    }
-                }).catch(err => {
-                    console.log(err);
-                });
-        })
+            // Display the result in the element with id="demo"
+            document.getElementById("counter").innerText = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
 
-        $("#close").click(function () {
-            $('#regForm').show();
-            $('#regSuccess').hide();
-        })
-
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("counter").innerHTML = "Event has started";
+            }
+        }, 1000);
     </script>
+
+
 
 </body>
 
