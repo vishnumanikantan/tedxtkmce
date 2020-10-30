@@ -2044,7 +2044,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_about.scss */
 .about_area {
-  padding-bottom: 150px;
+  padding-bottom: 20px;
   position: relative;
   margin-top: -2px;
 }
@@ -2052,7 +2052,7 @@ h3 {
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_about.scss */
   .about_area {
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
 }
 
@@ -2324,14 +2324,14 @@ h3 {
 
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_performer.scss */
 .performar_area {
-  padding-top: 135px;
+  padding-top: 60px;
   padding-bottom: 63px;
 }
 
 @media (max-width: 767px) {
   /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_performer.scss */
   .performar_area {
-    padding-top: 50px;
+    padding-top: 40px;
     padding-bottom: 20px;
   }
 }
@@ -2339,7 +2339,7 @@ h3 {
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_performer.scss */
   .performar_area {
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 60px;
   }
 }
@@ -2377,7 +2377,7 @@ h3 {
 
 /* line 28, ../../Arafath/CL/December/236. Event-02/HTML/scss/_performer.scss */
 .performar_area .single_performer .performer_heading {
-  margin-top: 35px;
+  margin-top: 15px;
 }
 
 /* line 30, ../../Arafath/CL/December/236. Event-02/HTML/scss/_performer.scss */
@@ -2386,7 +2386,6 @@ h3 {
   font-family: "Anton", sans-serif;
   color: #fff;
   font-weight: 400;
-  margin-bottom: 14px;
 }
 
 /* line 37, ../../Arafath/CL/December/236. Event-02/HTML/scss/_performer.scss */
@@ -2398,13 +2397,13 @@ h3 {
 
 /* line 2, ../../Arafath/CL/December/236. Event-02/HTML/scss/_brand.scss */
 .brand_area {
-  padding-top: 150px;
+  padding-top: 40px;
 }
 
 @media (max-width: 767px) {
   /* line 2, ../../Arafath/CL/December/236. Event-02/HTML/scss/_brand.scss */
   .brand_area {
-    padding-top: 60px;
+    padding-top: 30px;
   }
 }
 
