@@ -2057,6 +2057,21 @@ h3 {
   padding-left: 5%;
   padding-right: 5%;
 }
+@media (min-width: 300px) and (max-width: 500px) {
+  /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_about.scss */
+  #about1 {
+    font-size: 16px;
+  }
+  #about2 {
+    font-size: 16px;
+  }
+  #about3 {
+    font-size: 16px;
+  }
+  #about4 {
+    font-size: 16px;
+  }
+}
 
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_about.scss */
