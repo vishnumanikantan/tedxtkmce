@@ -49,6 +49,13 @@ body {
   background-image: url("../img/black_bg3.jpg");
 }
 
+@media (min-width: 400) and (max-width: 700px) {
+  /* line 69, ../../Arafath/CL/December/236. Event-02/HTML/scss/_bradcam.scss */
+  body {
+    padding: 25px;
+  }
+}
+
 /* line 25, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 .img {
   max-width: 100%;
@@ -2047,6 +2054,8 @@ h3 {
   padding-bottom: 20px;
   position: relative;
   margin-top: -2px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2326,6 +2335,7 @@ h3 {
 .performar_area {
   padding-top: 60px;
   padding-bottom: 63px;
+  padding: 5%;
 }
 
 @media (max-width: 767px) {
