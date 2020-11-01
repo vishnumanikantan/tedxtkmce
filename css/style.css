@@ -2060,16 +2060,20 @@ h3 {
 @media (min-width: 300px) and (max-width: 500px) {
   /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_about.scss */
   #about1 {
-    font-size: 16px;
+    font-size: 18px;
+    text-align: justify;
   }
   #about2 {
-    font-size: 16px;
+    font-size: 18px;
+    text-align: justify;
   }
   #about3 {
-    font-size: 16px;
+    font-size: 18px;
+    text-align: justify;
   }
   #about4 {
-    font-size: 16px;
+    font-size: 18px;
+    text-align: justify;
   }
 }
 
