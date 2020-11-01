@@ -21,10 +21,10 @@ var ringer = {
         // }
     },
     r_count: 3, // make it 4 on adding seconds
-    r_spacing: 10, // px
-    r_size: 75, // px
-    r_thickness: 2, // px
-    update_interval: 11, // ms
+    r_spacing: 10 * window.devicePixelRatio || 1, // px
+    r_size: 75 * window.devicePixelRatio || 1, // px
+    r_thickness: 2 * window.devicePixelRatio || 1, // px
+    update_interval: 1000, // ms
 
 
     init: function () {
