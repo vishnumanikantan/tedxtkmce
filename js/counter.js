@@ -47,7 +47,7 @@
                                         $r.ctx.textAlign = 'center';
                                         $r.actual_size = $r.r_size + $r.r_thickness;
                                         $r.countdown_to_time = new Date($r.countdown_to).getTime() + (9*3600*1000);
-                                        $r.cvs.css({ width: $r.size.w + "px", height: $r.size.h + "px" });
+                                        $r.cvs.css({ width: $r.size.w + "px", height: $r.size.h + "px"});
                                         $r.go();
                                     },
                                     ctx: null,
@@ -98,13 +98,13 @@
 
                                         // label
                                         $r.ctx.fillStyle = "#ffffff";
-
-                                        $r.ctx.font = '12px Helvetica';
-                                        $r.ctx.fillText(label, 0, 23);
-                                        $r.ctx.fillText(label, 0, 23);
+                                        
+                                        $r.ctx.font = '10px Helvetica';
+                                        $r.ctx.fillText(label, 0, 16);
+                                        $r.ctx.fillText(label, 0, 16);
 
                                         $r.ctx.font = 'bold 30px Helvetica';
-                                        $r.ctx.fillText(Math.floor(value), 0, 10);
+                                        $r.ctx.fillText(Math.floor(value), 0, 7);
 
                                         $r.ctx.restore();
                                     }
