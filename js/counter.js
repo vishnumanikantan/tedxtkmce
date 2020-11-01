@@ -14,13 +14,13 @@ var ringer = {
         'MINUTES': {
             s: 60000, // mseconds per minute
             max: 60
-        },
-        'SECONDS': {
-            s: 1000,
-            max: 60
-        }
+        }//,
+        // 'SECONDS': {
+        //     s: 1000,
+        //     max: 60
+        // }
     },
-    r_count: 4,
+    r_count: 3, // make it 4 on adding seconds
     r_spacing: 10, // px
     r_size: 75, // px
     r_thickness: 2, // px
