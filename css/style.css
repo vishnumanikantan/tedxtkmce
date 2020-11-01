@@ -1174,7 +1174,7 @@ h3 {
 
 /* line 100, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .main-header-area .buy_tkt .book_btn a {
-  background: #FF4533;
+  background:  #FF2B06;
   /* font-family: "Anton", sans-serif; */
   padding: 12px 46px;
   font-size: 16px;
@@ -1196,8 +1196,8 @@ h3 {
 
 /* line 113, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .main-header-area .buy_tkt .book_btn a:hover {
-  border-color: #FF4533;
-  color: #FF4533;
+  border-color:  #FF2B06;
+  color:  #FF2B06;
   background: transparent;
 }
 
@@ -1278,7 +1278,7 @@ h3 {
 
 /* line 185, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a.active {
-  color: #FF4533;
+  color:  #FF2B06;
 }
 
 /* line 187, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
@@ -1289,7 +1289,7 @@ h3 {
 
 /* line 192, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a:hover {
-  color: #FF4533;
+  color:  #FF2B06;
 }
 
 /* line 196, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
@@ -1438,7 +1438,7 @@ h3 {
 
 /* line 291, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .header-top_area .social_media_links a:hover {
-  color: #FF4533;
+  color:  #FF2B06;
 }
 
 /* line 297, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
@@ -1483,7 +1483,7 @@ h3 {
 
 /* line 321, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .header-top_area .short_contact_list ul li a i {
-  color: #FF4533;
+  color:  #FF2B06;
   margin-right: 7px;
 }
 
@@ -1643,7 +1643,7 @@ h3 {
   /* font-family: "Halvetica" , Arial; */
   font-size: 122px;
   font-weight: 850;
-  color: #FF4533;
+  color:  #FF2B06;
   line-height: 1;
 }
 
@@ -1672,7 +1672,7 @@ h3 {
   /* font-family: "Halvetica" , Arial; */
   font-size: 100px;
   font-weight: 800;
-  color: #FF4533;
+  color:  #FF2B06;
   vertical-align: text-top;
   line-height: normal;  
   
@@ -1757,7 +1757,7 @@ h3 {
 }
 
 #get_tkt{
-  background: #FF4533;
+  background: #FF2B06;
   font-family: "Anton", sans-serif;
   padding: 12px 46px;
   font-size: 16px;
@@ -1771,8 +1771,8 @@ h3 {
 }
 
 #get_tkt:hover {
-  border-color: #FF4533;
-  color: #FF4533;
+  border-color: #FF2B06;
+  color: #FF2B06;
   background: transparent;
 }
 
@@ -1824,7 +1824,7 @@ h3 {
 .slider_area .serach_icon a {
   width: 45px;
   height: 45px;
-  background: #FD8E5E;
+  background: #FF2B06;
   text-align: center;
   line-height: 45px;
   color: #fff;
