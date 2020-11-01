@@ -22,7 +22,7 @@ var ringer = {
     },
     r_count: 3, // make it 4 on adding seconds
     r_spacing: 10, // px
-    r_size: 65, // px
+    r_size: 65 / window.devicePixelRatio, // px
     r_thickness: 2, // px
     update_interval: 1000, // ms
 
