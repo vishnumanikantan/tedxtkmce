@@ -51,8 +51,8 @@ var ringer = {
         $r.cvs.setAttribute('width', $r.size.w);
         $r.cvs.setAttribute('height', $r.size.h);
         $r.ctx = $r.cvs.getContext('2d');
-
-        $r.ctx.scale(dpr, dpr);
+        
+        $r.ctx.scale(dpr/4, dpr/4);
 
         document.getElementById('counterArea').appendChild($r.cvs);
         $r.cvs = $($r.cvs);
