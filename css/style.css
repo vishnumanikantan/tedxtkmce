@@ -3,6 +3,19 @@
 
 
 
+@media (min-width: 400px) and (max-width: 700px) {
+  /* line 69, ../../Arafath/CL/December/236. Event-02/HTML/scss/_bradcam.scss */
+  #themeHeading {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1600px) {
+  /* line 69, ../../Arafath/CL/December/236. Event-02/HTML/scss/_bradcam.scss */
+  #themeHeading {
+    font-size: 90px;
+  }
+}
 
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_extend.scss */
 .flex-center-start {
