@@ -22,7 +22,7 @@ var ringer = {
     },
     r_count: 3, // make it 4 on adding seconds
     r_spacing: 10, // px
-    r_size: 75, // px
+    r_size: 65, // px
     r_thickness: 2, // px
     update_interval: 1000, // ms
 
@@ -32,6 +32,11 @@ var ringer = {
         $r = ringer;
         $r.cvs = document.createElement('canvas');
 
+        $r.size = {
+            w: ($r.r_size + $r.r_thickness) * $r.r_count + ($r.r_spacing * ($r.r_count - 1)),
+            h: ($r.r_size + $r.r_thickness)
+        };
+
         var dpr = window.devicePixelRatio || 1;
         // Get the size of the canvas in CSS pixels.
         var rect = $r.cvs.getBoundingClientRect();
@@ -39,23 +44,16 @@ var ringer = {
         // size * the device pixel ratio.
         $r.cvs.width = rect.width * dpr;
         $r.cvs.height = rect.height * dpr;
-        var ctx = $r.cvs.getContext('2d');
-        // Scale all drawing operations by the dpr, so you
-        // don't have to worry about the difference.
-        ctx.scale(dpr, dpr);
         
-
-
-        $r.size = {
-            w: ($r.r_size + $r.r_thickness) * $r.r_count + ($r.r_spacing * ($r.r_count - 1)),
-            h: ($r.r_size + $r.r_thickness)
-        };
-
+        
 
 
         $r.cvs.setAttribute('width', $r.size.w);
         $r.cvs.setAttribute('height', $r.size.h);
         $r.ctx = $r.cvs.getContext('2d');
+
+        $r.ctx.scale(dpr, dpr);
+
         document.getElementById('counterArea').appendChild($r.cvs);
         $r.cvs = $($r.cvs);
         $r.ctx.textAlign = 'center';
