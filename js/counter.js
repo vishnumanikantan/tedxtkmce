@@ -22,7 +22,7 @@ var ringer = {
     },
     r_count: 3, // make it 4 on adding seconds
     r_spacing: 10, // px
-    r_size: 75 , // px
+    r_size: 75, // px
     r_thickness: 2, // px
     update_interval: 1000, // ms
 
@@ -31,6 +31,20 @@ var ringer = {
 
         $r = ringer;
         $r.cvs = document.createElement('canvas');
+
+        var dpr = window.devicePixelRatio || 1;
+        // Get the size of the canvas in CSS pixels.
+        var rect = $r.cvs.getBoundingClientRect();
+        // Give the canvas pixel dimensions of their CSS
+        // size * the device pixel ratio.
+        $r.cvs.width = rect.width * dpr;
+        $r.cvs.height = rect.height * dpr;
+        var ctx = canvas.getContext('2d');
+        // Scale all drawing operations by the dpr, so you
+        // don't have to worry about the difference.
+        ctx.scale(dpr, dpr);
+        
+
 
         $r.size = {
             w: ($r.r_size + $r.r_thickness) * $r.r_count + ($r.r_spacing * ($r.r_count - 1)),
@@ -96,7 +110,7 @@ var ringer = {
         $r.ctx.beginPath();
         $r.ctx.arc(0, 0, $r.r_size / 2, 0, endAngle, 1);
         $r.ctx.lineWidth = $r.r_thickness;
-        
+
         $r.ctx.stroke();
 
         // label
