@@ -22,7 +22,7 @@ var ringer = {
     },
     r_count: 3, // make it 4 on adding seconds
     r_spacing: 10, // px
-    r_size: 65 , // px
+    r_size: 75, // px
     r_thickness: 2, // px
     update_interval: 1000, // ms
 
@@ -97,8 +97,8 @@ var ringer = {
         // first circle
         $r.ctx.strokeStyle = "rgba(128,128,128,0.2)";
         $r.ctx.beginPath();
-        $r.ctx.arc(0, 0, $r.r_size / (2*window.devicePixelRatio), 0, 2 * Math.PI, 2);
-        $r.ctx.lineWidth = $r.r_thickness / window.devicePixelRatio;
+        $r.ctx.arc(0, 0, $r.r_size / 2, 0, 2 * Math.PI, 2);
+        $r.ctx.lineWidth = $r.r_thickness;
         $r.ctx.fill();
         $r.ctx.fillStyle = "#000000";
         $r.ctx.stroke();
@@ -106,8 +106,8 @@ var ringer = {
         // second circle
         $r.ctx.strokeStyle = "rgba(255, 43, 6, 1)";
         $r.ctx.beginPath();
-        $r.ctx.arc(0, 0, $r.r_size / (2*window.devicePixelRatio), 0, endAngle, 1);
-        $r.ctx.lineWidth = $r.r_thickness/window.devicePixelRatio;
+        $r.ctx.arc(0, 0, $r.r_size / 2, 0, endAngle, 1);
+        $r.ctx.lineWidth = $r.r_thickness;
 
         $r.ctx.stroke();
 
@@ -119,7 +119,6 @@ var ringer = {
         $r.ctx.fillText(label, 0, 16);
 
         $r.ctx.font = 'bold 30px Helvetica';
-        $r.ctx.font = 30/window.devicePixelRatio;
         $r.ctx.fillText(Math.floor(value), 0, 7);
 
         $r.ctx.restore();
