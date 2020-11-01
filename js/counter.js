@@ -39,7 +39,7 @@ var ringer = {
         // size * the device pixel ratio.
         $r.cvs.width = rect.width * dpr;
         $r.cvs.height = rect.height * dpr;
-        var ctx = canvas.getContext('2d');
+        var ctx = $r.cvs.getContext('2d');
         // Scale all drawing operations by the dpr, so you
         // don't have to worry about the difference.
         ctx.scale(dpr, dpr);
