@@ -101,7 +101,12 @@ body {
   font-family: 'tedFont';
   font-weight: normal;
   font-style: normal;
-  background-image: url("../img/black_bg3.jpg");
+  background-color: #000000;
+  background-image: url("../img/black_bg3.png");
+  
+  
+
+  
 }
 
 @media (min-width: 400) and (max-width: 700px) {
