@@ -1594,7 +1594,12 @@ h3 {
     margin: 230px 0 80px 0;
   }
 }
-
+@media (min-width: 1500px){
+  /* line 65, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text {
+    margin: 230px 0 80px 0;
+  }
+}
 /* line 26, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text .shape_2 {
   position: absolute;
