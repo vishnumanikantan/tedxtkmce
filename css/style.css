@@ -5,6 +5,23 @@
   margin: 2%;
 }
 
+.thumb{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.performer_heading{
+  text-align: center;
+}
+
+
+@media (min-width: 200px) and (max-width: 700px) {
+  .mainSpeakersList div{
+    margin-left: auto;
+    margin-right: auto;
+  }  
+}
 @media (min-width: 400px) and (max-width: 700px) {
   /* line 69, ../../Arafath/CL/December/236. Event-02/HTML/scss/_bradcam.scss */
   #themeHeading {
