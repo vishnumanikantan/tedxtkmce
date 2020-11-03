@@ -55,6 +55,7 @@
   }
 }
 
+
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_extend.scss */
 .flex-center-start {
   display: -webkit-box;
@@ -103,9 +104,6 @@ body {
   font-style: normal;
   background-color: #000000;
   background-image: url("../img/black_bg3.png");
-  
-  
-
   
 }
 
@@ -304,11 +302,11 @@ h3 {
   position: absolute;
   content: "";
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.3+0,1+100 */
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, black 100%);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, black 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, black 100%);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, black 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, black 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, black 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#000000',GradientType=0 );
   /* IE6-9 */
@@ -1579,6 +1577,8 @@ h3 {
 .slider_bg_1 {
   background-image: url(../img/banner/banner.png);
   max-height: 700px;
+  background-position-y: left top;
+  background-size: contain;
 }
 
 /* line 4, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
