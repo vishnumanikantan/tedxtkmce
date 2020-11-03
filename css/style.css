@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Anton|Monoton|Muli:400,400i,500,500i,600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Anton|Monoton|Muli:400,400i,500,500i,600&display=swap");
 
-
+#termsAndConditions li{
+  margin: 2%;
+}
 
 @media (min-width: 400px) and (max-width: 700px) {
   /* line 69, ../../Arafath/CL/December/236. Event-02/HTML/scss/_bradcam.scss */
