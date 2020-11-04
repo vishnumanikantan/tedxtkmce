@@ -1596,13 +1596,18 @@ h3 {
   max-height: 700px;
 }
 
-@media (min-width: 200px) and (max-width: 700px){
+@media (min-width: 200px) and (max-width: 450px){
+  .slider_bg_1 {
+    background-image: url(../img/banner/banner.png);
+    max-height: 600px;
+  }
+}
+@media (min-width: 450px) and (max-width: 700px){
   .slider_bg_1 {
     background-image: url(../img/banner/banner2.png);
     max-height: 600px;
   }
 }
-
 /* line 4, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 .slider_bg_2 {
   background-image: url(../img/banner/banner2.png);
