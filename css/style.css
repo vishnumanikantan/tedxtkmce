@@ -70,9 +70,22 @@
   }
 }
 
-@media (min-width: 200px) and (max-width: 700px) {
+@media (min-width: 200px) and (max-width: 550px) {
   /* line 69, ../../Arafath/CL/December/236. Event-02/HTML/scss/_bradcam.scss */
   .card-body h5{
+    font-size: 12px;
+  }
+  .card-body h6{
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 800px) {
+  /* line 69, ../../Arafath/CL/December/236. Event-02/HTML/scss/_bradcam.scss */
+  .card-body h5{
+    font-size: 14px;
+  }
+  .card-body h6{
     font-size: 14px;
   }
 }
