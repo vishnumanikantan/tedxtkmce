@@ -2,7 +2,15 @@
 @import url("https://fonts.googleapis.com/css?family=Anton|Monoton|Muli:400,400i,500,500i,600&display=swap");
 
 #termsAndConditions li{
-  margin: 2%;
+  margin: 1%;
+}
+
+#termsAndConditions li p{
+  font-size: 16px;
+}
+
+#faqArea div ul li p{
+  font-size: 16px;
 }
 
 .thumb{
@@ -204,7 +212,7 @@ li {
 /* line 80, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 p {
   font-size: 20px;
-  color: #AAB1B7;
+  color: #ffffff;
   line-height: 32px;
   margin-bottom: 0;
   font-weight: 400;
@@ -860,7 +868,7 @@ h3 {
 /* line 34, ../../Arafath/CL/December/236. Event-02/HTML/scss/_section_title.scss */
 .section_title p {
   font-size: 20px;
-  color: #AAB1B7;
+  color: #ffffff;
   line-height: 32px;
   margin-bottom: 0;
   font-weight: 400;
@@ -2477,7 +2485,7 @@ h3 {
 
 /* line 30, ../../Arafath/CL/December/236. Event-02/HTML/scss/_performer.scss */
 .performar_area .single_performer .performer_heading h4 {
-  font-size: 30px;
+  font-size: 26px;
   font-family: "Anton", sans-serif;
   color: #fff;
   font-weight: 400;
