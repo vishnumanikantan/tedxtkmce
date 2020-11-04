@@ -63,6 +63,15 @@
   }
 }
 
+@media (min-width: 200px) and (max-width: 700px) {
+  /* line 69, ../../Arafath/CL/December/236. Event-02/HTML/scss/_bradcam.scss */
+  .card-body h5{
+    font-size: 14px;
+  }
+}
+
+
+
 
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_extend.scss */
 .flex-center-start {
@@ -1583,10 +1592,15 @@ h3 {
 
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 .slider_bg_1 {
-  background-image: url(../img/banner/banner.png);
+  background-image: url(../img/banner/banner3.png);
   max-height: 700px;
-  background-position-y: left top;
-  background-size: contain;
+}
+
+@media (min-width: 200px) and (max-width: 700px){
+  .slider_bg_1 {
+    background-image: url(../img/banner/banner2.png);
+    max-height: 600px;
+  }
 }
 
 /* line 4, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
