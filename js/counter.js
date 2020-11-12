@@ -58,7 +58,7 @@ var ringer = {
         $r.cvs = $($r.cvs);
         $r.ctx.textAlign = 'center';
         $r.actual_size = $r.r_size + $r.r_thickness;
-        $r.countdown_to_time = new Date($r.countdown_to).getTime() + (9 * 3600 * 1000);
+        $r.countdown_to_time = new Date($r.countdown_to).getTime() + (12 * 3600 * 1000);
         $r.cvs.css({ width: $r.size.w + "px", height: $r.size.h + "px" });
         $r.go();
     },
