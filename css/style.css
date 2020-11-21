@@ -1,6 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Anton|Monoton|Muli:400,400i,500,500i,600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Anton|Monoton|Muli:400,400i,500,500i,600&display=swap");
 
+
+.sponsor-img{
+  object-fit:cover;
+  max-width: 500px;
+  height: 160px; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+@media (min-width: 200px) and (max-width: 500px) {
+  .sponsor-img{
+    object-fit:contain;
+    max-width: 230px;
+    height: 100px; 
+    margin-left: auto; 
+    margin-right: auto;
+  }
+}
 #termsAndConditions li{
   margin: 1%;
 }
